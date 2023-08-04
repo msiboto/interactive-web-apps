@@ -1,5 +1,5 @@
 
-const id = (c) ACME Inc. 2010
+const id = '(c) ACME Inc. 2010'
 
 
 
