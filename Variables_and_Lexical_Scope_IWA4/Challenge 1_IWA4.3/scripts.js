@@ -1,5 +1,5 @@
-let date: 2050
-let status: 'student'
+let date = 2050
+let status ='student'
 let count = 0
 
 if (date = 2050) {
@@ -8,26 +8,26 @@ if (date = 2050) {
 	date = 'April'
 	console.log(date, 'Family Day')
 	console.log(date, 'Freedom Day')
-	let count = count + 4
+		count = count + 4
 
 	if (status = "student") {
 	  console.log('June', 'Youth Day')
-		let count = count + 1
+		count = count + 1
   }
 
 	console.log('August', 'Women’s Day')
 	console.log('September', 'Heritage Day')
 	date = 'December'
 	console.log(date, 'Day of Reconciliation')
-	let count = count + 3
+		count = count + 3
 
 	if (status = "parent") {
 	  console.log(date, 'Christmas Day')
-		let count = count + 1
+		 count = count + 1
   }
 
 	console.log(date, 'Day of Goodwill')
-	let count = count + 1
+		count = count + 1
 }
 
 console.log('Your status is:', status)
