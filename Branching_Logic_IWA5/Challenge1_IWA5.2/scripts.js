@@ -1,5 +1,5 @@
 FREE_WARNING = 'Free shipping only applies to single customer orders'
-BANNED_WARNIN = 'Unfortunately we do not ship to your country of residence'
+BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
 NONE_SELECTED = '0'
 
 if (location = RSA) { shipping === 400 && currency === 'R' }
@@ -18,16 +18,15 @@ shipping = null
 currency = $
 
 if (shoes + batteries + pens + shirts > 1000) {
-	if (location = NAM && customers < 2) {
-			if (location = RSA)
-		    shipping = 0 || calcShipping
+	if (location = NAM, RSA && customers < 1) {
+		shipping = 0 || calcShipping
 		}
 	}
 
 
-if (shipping === 0 && customers === 1) { console.log(WARNING) }
+if (shipping === 0 && customers !== 1) { console.log(WARNING) }
 
-location = 'NK' ? console.log(WARNING) : console.log('price', currency, shoes + batteries + pens + shirts + shipping)
+if (location = NK) console.log(BANNED_WARNING) 
 
 customers = '1'
 const location = 'RSA'
