@@ -1,6 +1,6 @@
 
-const nickname = "Timmy";
-const firstname = "Timothy";
+const nickname = "";
+const firstname = "";
 const user =  nickname || firstname 
 
 
