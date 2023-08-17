@@ -6,6 +6,8 @@ const size = 'large'
 /*
 // Only change the syntax below (not the values or key names)
 
+SOLUTION 1
+
 const expenses = {
     food: 51.7501,
     transport:  10.2,
@@ -39,7 +41,7 @@ console.log(balance.toFixed(2))
 
 */
 
-//MY OTHER SOLUTION
+//SOLUTION 2
 
 const expenses = {
     food: 51.7501,
