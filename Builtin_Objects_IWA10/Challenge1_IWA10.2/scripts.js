@@ -54,6 +54,7 @@ const futureId = 9
 // Do not change code above this comment
 
 console.log(futureId.name || 'ID ' + futureId + ' not created yet')
+//console.log
 
 let copied = {
     name: 'X-mas Day',
