@@ -54,11 +54,12 @@ const futureId = 9
 // Do not change code above this comment
 
 console.log(futureId.name || 'ID ' + futureId + ' not created yet')
-//console.log
+
 
 let copied = {
+    id : holidays[christmas].id,
     name: 'X-mas Day',
-    date: new Date,
+    date: new Date (holidays[christmas].date),
 }
 correctDate = copied.date
 correctDate.getHours(0,0);
@@ -117,7 +118,7 @@ const lastMonth = (lastDate.getMonth()) + 1
 console.log(firstDay + '/' + firstMonth + '/' + currentYear)
 console.log(lastDay + '/' + lastMonth + '/' + currentYear)
 
-const randomNumber = Math.round(Math.random()*9)
+const randomNumber = Math.round(Math.random()*8)
 console.log(randomNumber)
 const randomHoliday = new Date(holidays[randomNumber].date)
 const randomDay = (randomHoliday.getDate()).toString().padStart(2,0)
