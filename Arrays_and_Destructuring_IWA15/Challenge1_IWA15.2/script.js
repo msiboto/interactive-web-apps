@@ -18,16 +18,14 @@ const result = []
 
 const extractBiggest = () => {
 	if (first[first.length - 1] > second[second.length - 1]) {
-		const firstLastValue = first.pop(first.length - 1)
-        return firstLastValue
+	    return first.pop()
 	}
 
-	if (second[first.length - 1] > third[third.length - 1]) {
-        const secondLastValue = second.pop(first.length - 1)
-        return secondLastValue
+	if (second[second.length - 1] > third[third.length - 1]) {
+       return second.pop()
 	}
 	
-	return third.pop(third.length - 1)
+	return third.pop()
 }
 
 // Only edit above

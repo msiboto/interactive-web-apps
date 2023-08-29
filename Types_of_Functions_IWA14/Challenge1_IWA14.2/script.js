@@ -8,7 +8,7 @@ const logTwice = (parameter) => {
 }
 
 function logHobby () {
-  logTwice(`Hello, ${firstName} (${age}). I love ${hobby}!`)
+  logTwice(`Hello, ${firstName} ${age}. I love ${hobby}!`)
 }
 
 logHobby()
