@@ -91,6 +91,7 @@ const MONTHS = [
     const minutes = total / 60;
 
     const list = document.createElement('dl');
+    document.querySelector('[data-athlete = ${id}]').append(list)
   
     list.innerHTML =` 
       <dt>Athlete</dt>
