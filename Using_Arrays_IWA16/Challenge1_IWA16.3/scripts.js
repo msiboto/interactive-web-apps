@@ -68,18 +68,16 @@ const MONTHS = [
   // Only edit below this comment
   
   const createHtml = (athlete) => {
-    const firstName = athlete.firstName
-    const surname = athlete.surname
-    const id = athlete.id
-    const races = athlete.races
+   
+    const {firstName, surname, id, races} = athlete
     const {date, time} = races[races.length - 1]
 
-    const body = document.body
-    const title = document.createElement(h2);
+    const fragment = document.createDocumentFragment()
+    const title = document.createElement("h2");
     title.textContext = id;
-    body.append(title)
+    fragment.append(title)
 
-    const dateMain = newDate(date)
+    const dateMain = new Date(date)
     const day = dateMain.getDate()
     const month = MONTHS[dateMain.getMonth()];
     const year = dateMain.getFullYear();
@@ -91,8 +89,7 @@ const MONTHS = [
     const minutes = total / 60;
 
     const list = document.createElement('dl');
-    document.querySelector('[data-athlete = ${id}]').append(list)
-  
+   
     list.innerHTML =` 
       <dt>Athlete</dt>
       <dd>${firstName} ${surname}</dd>
@@ -105,7 +102,7 @@ const MONTHS = [
       <dd>${hours}: ${minutes}</dd>
        ` ;
   
-     body.append(list);
+     fragment.append(list);
    
   }
 
