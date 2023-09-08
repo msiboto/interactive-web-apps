@@ -91,6 +91,8 @@ const handleAddToggle = (event) => {
 }
     //once new order is confirmed
 const handleAddSubmit = (event) => {
+    //added preventDefault to avoid added order from dissapearing 
+    event.preventDefault()
 
     const input = document.querySelector('[data-add-title]')
 
@@ -100,7 +102,7 @@ const handleAddSubmit = (event) => {
 
     const table = document.querySelector('[data-add-table]').value
 
-    const created = new Date()
+    const created = new Date
 
     const order = {
         id: id,
@@ -114,6 +116,7 @@ const handleAddSubmit = (event) => {
 
     const newElement = createOrderHtml(order)
     container.appendChild(newElement)
+    
     const inputBox = document.querySelector('[data-add-title]')
 
     inputBox.value = ''
